@@ -1,7 +1,7 @@
 'use client'
 import { usePathname, useRouter } from 'next/navigation'
 import { signOut } from 'next-auth/react'
-import { LayoutDashboard, ShoppingCart, DollarSign, Users, Package, FileText, LogOut } from 'lucide-react'
+import { LayoutDashboard, ShoppingCart, DollarSign, Users, Package, FileText, LogOut, Tag, BarChart2 } from 'lucide-react'
 
 const NAV = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard, section: 'Principal' },
@@ -10,6 +10,8 @@ const NAV = [
   { href: '/clientes',  label: 'Clientes',  icon: Users },
   { href: '/estoque',   label: 'Estoque',   icon: Package },
   { href: '/nf',        label: 'Notas Fiscais', icon: FileText },
+  { href: '/produtos',  label: 'Produtos',      icon: Tag,      section: 'Configurações' },
+  { href: '/relatorios',label: 'Relatórios',    icon: BarChart2 },
 ]
 
 export default function Sidebar() {
